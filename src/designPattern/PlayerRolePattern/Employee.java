@@ -1,4 +1,4 @@
-package pattern.PlayerRolePattern;
+package designPattern.PlayerRolePattern;
 
 public abstract class Employee {
 

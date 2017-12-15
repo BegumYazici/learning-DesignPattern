@@ -1,4 +1,4 @@
-package pattern.PlayerRolePattern;
+package designPattern.PlayerRolePattern;
 
 import java.util.HashMap;
 
@@ -36,7 +36,7 @@ public class EmployeeCore extends Employee {
 
     @Override
     public void removeRole(String aSpec) {
-  roles.remove(aSpec);
+        roles.remove(aSpec);
     }
 
     @Override
