@@ -36,14 +36,8 @@ public class Singleton {
 
     public static Singleton getInstance() {
         if (firstInstance == null) {
-
-            // This is here to test what happens if threads try
-            // to create instances of this class
-
             if (firstThread) {
-
                 firstThread = false;
-
                 try {
                     Thread.currentThread();
                     Thread.sleep(1000);
@@ -52,27 +46,13 @@ public class Singleton {
                     e.printStackTrace();
                 }
             }
-
-            // Here we just use synchronized when the first object
-            // is created
-
             synchronized (Singleton.class) {
-
                 if (firstInstance == null) {
-                    // If the instance isn't needed it isn't created
-                    // This is known as lazy instantiation
-
                     firstInstance = new Singleton();
-
-                    // Shuffle the letters in the list
                     Collections.shuffle(firstInstance.letterList);
-
                 }
             }
         }
-
-        // Under either circumstance this returns the instance
-
         return firstInstance;
     }
 
