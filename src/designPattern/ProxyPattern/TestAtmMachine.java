@@ -6,7 +6,7 @@ public class TestAtmMachine {
 
         AtmMachine atmMachine = new AtmMachine();
 
-        atmMachine.insertCard();
+ /*       atmMachine.insertCard();
 
         atmMachine.ejectCard();
 
@@ -19,7 +19,7 @@ public class TestAtmMachine {
         atmMachine.insertCard();
 
         atmMachine.insertPin(1234);
-
+*/
         // NEW STUFF : Proxy Design Pattern Code
         // The interface limits access to just the methods you want
         // made accessible
